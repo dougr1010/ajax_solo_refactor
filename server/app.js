@@ -6,7 +6,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/',function(request, response){
     console.log("hit / endpoint");
-    response.sendfile(__dirname + '/public/views/index.html');
+    response.sendFile(__dirname + '/public/views/index.html');
 });
 
 app.get('/getColors',function(request, response){
